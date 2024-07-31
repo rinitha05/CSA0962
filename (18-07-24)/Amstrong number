@@ -1,0 +1,18 @@
+import java.util.*;
+class Armstrong{  
+public static void main(String[] args)  {   
+Scanner sc=new Scanner(System.in);
+int n ,rem, sum = 0; 
+System.out.println("enter the number:");
+n=sc.nextInt(); 
+while(n != 0)   {  
+rem = n % 10;  
+sum += rem*rem*rem;  
+n = n/10;  
+}  
+if(sum==n) {
+System.out.println("ARMSTRONG");
+}else{
+System.out.println("Not");
+}
+} }
