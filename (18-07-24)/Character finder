@@ -1,0 +1,14 @@
+public class CharacterFinder {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+        char ch = 'o';
+        
+        int index = str.indexOf(ch);
+        
+        if (index != -1) {
+            System.out.println("Character '" + ch + "' found at index: " + index);
+        } else {
+            System.out.println("Character '" + ch + "' not found in the string.");
+        }
+    }
+}
