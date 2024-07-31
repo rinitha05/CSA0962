@@ -1,0 +1,12 @@
+class Fibinocci{
+public static void main(String args[]){
+int num=10,temp;
+int t1=0;
+int t2=1;
+System.out.print("fibinocci series :"+t1+","+t2+",");
+for (int i=3;i<=num;i++){
+temp=t1+t2;
+t1=t2;
+t2=temp;
+System.out.print(temp+",");
+}}}
