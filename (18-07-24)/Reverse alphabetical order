@@ -1,0 +1,22 @@
+import java.util.Arrays;
+import java.util.Collections;
+
+public class ReverseAlphabeticalOrder {
+    public static void main(String[] args) {
+        String word = "alphabet";
+        Character[] chars = new Character[word.length()];
+
+        for (int i = 0; i < word.length(); i++) {
+            chars[i] = word.charAt(i);
+        }
+
+        Arrays.sort(chars, Collections.reverseOrder());
+
+        StringBuilder reversedWord = new StringBuilder(chars.length);
+        for (char c : chars) {
+            reversedWord.append(c);
+        }
+
+        System.out.println(reversedWord.toString());
+    }
+}
